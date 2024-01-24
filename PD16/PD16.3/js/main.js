@@ -1,11 +1,12 @@
-//  JavaScript funkciją, kuri paskaičiuoja trikampio plotą
-var side1 = 4; 
-var side2 = 5; 
-var side3 = 6; 
-
-var s = (side1 + side2 + side3) / 2;
 
 
-var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
-
-console.log(area);
+function triangleArea(base, height) {
+    return 0.5 * base * height;
+  }
+   
+  // Example usage
+  let baseLength = 10;
+  let heightLength = 5;
+  let area = triangleArea(baseLength, heightLength);
+  console.log(`The area of the triangle is: ${area}`);
+  
